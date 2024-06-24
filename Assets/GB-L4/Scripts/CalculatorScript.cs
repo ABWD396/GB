@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -151,8 +152,8 @@ public class CalculatorScript : MonoBehaviour
             return;
         }
 
-        double secondNumber = Math.Round(double.Parse(inputNumber), 4);
-        double firstNumber = Math.Round(double.Parse(savedNumber), 4);
+        double secondNumber = Math.Round(parseDouble(inputNumber), 4);
+        double firstNumber = Math.Round(parseDouble(savedNumber), 4);
 
         double result = 0;
 
@@ -177,11 +178,20 @@ public class CalculatorScript : MonoBehaviour
         }
 
         Reset();
-        inputNumber = result.ToString();
+        inputNumber = doubleToString(result);
         if (inputNumber.Contains('.'))
         {
             SetInputState(InputState.DOT_PRESSED);
         }
+    }
+
+    private double parseDouble(string text) {
+        return double.Parse(text, CultureInfo.InvariantCulture);
+    }
+
+    private string doubleToString(double number)
+    {
+        return number.ToString(CultureInfo.InvariantCulture);        
     }
 
     private Command GetCommand(String command)
