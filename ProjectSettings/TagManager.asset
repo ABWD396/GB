@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Damagable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1185898967
+    locked: 0
+  - name: Ground
+    uniqueID: 852659857
+    locked: 0
+  - name: Foreground
+    uniqueID: 2860679519
+    locked: 0
+  - name: Player
+    uniqueID: 3960940919
+    locked: 0
+  - name: Creatures
+    uniqueID: 4292974907
+    locked: 0
+  - name: Props
+    uniqueID: 78199837
+    locked: 0
