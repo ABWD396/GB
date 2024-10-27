@@ -53805,6 +53805,10 @@ PrefabInstance:
       propertyPath: hitDelay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2226648703054134776, guid: 4ecc40b7662bf6a4488e4c5654e7aaba, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3739345526400805543, guid: 4ecc40b7662bf6a4488e4c5654e7aaba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.878
